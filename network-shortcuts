@@ -1,0 +1,13 @@
+#network-related shortcuts
+alias wifioff='nmcli radio wifi off'
+alias wifion='nmcli radio wifi on'
+alias activewifi='nmcli connection show --active'
+alias statuswifi='nmcli radio wifi'
+#wifi off, then confirm by printing status
+alias cwifioff='nmcli radio wifi off; nmcli radio wifi'
+#wifi on, then confirm by printing status
+alias cwifion='nmcli radio wifi on; nmcli radio wifi'
+#list all wifis around you
+alias wifiaround='nmcli device wifi list'
+#show all saved wifis:
+alias savednetworks='nmcli connection'
